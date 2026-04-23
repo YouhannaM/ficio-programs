@@ -409,6 +409,7 @@ export default function FicioPrograms() {
           </select>
           {!isDemo && <button onClick={fetchAll} style={{ ...btnSecondary, padding: "7px 12px" }}>↻</button>}
           <button onClick={() => setShowSetup(!showSetup)} style={{ ...btnSecondary, padding: "7px 12px", background: showSetup ? "#F5F5F5" : "#fff" }}>Setup</button>
+          <a href="/crucible" style={{ ...btnSecondary, padding: "7px 12px", textDecoration: "none", display: "inline-flex", alignItems: "center" }}>Try Crucible</a>
           <button onClick={() => { setForm({ title: "", project: projects[0] || "", assignee: team[0] || "", due: "", dependency: "" }); setShowAdd(true); }}
             style={btnPrimary}>+ Add Task</button>
         </div>
